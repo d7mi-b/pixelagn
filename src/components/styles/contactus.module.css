@@ -1,0 +1,148 @@
+.contactus {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem 5%;
+    position: relative;
+}
+
+.contactus .logoBackground {
+    position: absolute;
+    width: 150%;
+    height: 80%;
+    top: -1.8rem;
+    right: -28.1rem;
+    opacity: .04;
+    z-index: 1;
+}
+
+.contactus article {
+    width: 50%;
+    font-size: 1.5rem;
+    z-index: 10;
+}
+
+.contactus article header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contactus article div {
+    margin-top: 1.25rem;
+}
+
+.contactus article svg {
+    margin-left: 0.7rem;
+    color: var(--secondry-color);
+}
+
+.contactus article div a,
+.contactus .contentForMedia a {
+    width: fit-content;
+    margin-top: .31rem;
+    direction: ltr;
+    text-align: right;
+}
+
+.contactus article div:first-child a {
+    display: block;
+    margin-right: 1.9rem;
+}
+
+.contactus article a:hover,
+.contactus .contentForMedia a:hover {
+    color: var(--secondry-color);
+    transition: .4s;
+}
+
+.contactus form {
+    width: 50%;
+    z-index: 10;
+    font-size: 1rem;
+}
+
+.contactus form input,
+.contactus form textarea {
+    width: 100%;
+    display: block;
+    margin: 0.31rem 0 1.25rem;
+    padding: 0.43rem .95rem;
+}
+
+.contactus form textarea {
+    resize: none;
+    height: 9.4rem;
+}
+
+.contactus form input:focus-visible,
+.contactus form textarea:focus-visible {
+    outline: none;
+    outline: .12rem solid var(--secondry-color);
+}
+
+.contactus form .btn {
+    margin: .6rem auto 0;
+    border: none;
+    padding: .95rem 0;
+    font-size: 1.2rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.contactus .contentForMedia {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    margin: 5rem auto 1rem;
+}
+
+.contactus .contentForMedia a {
+    margin: 1rem 1.5rem;
+}
+
+.contactus .contentForMedia svg {
+    font-size: 3.5rem;
+}
+
+.contactus .contentForMedia div:first-child {
+    width: 100%;
+}
+
+.contactus .contentForMedia div:first-child a {
+    display: block;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.contactus .contentForMedia div:first-child svg {
+    font-size: 2rem;
+    margin-left: .8rem;
+}
+
+@media (max-width: 1024px) {
+    .contactus {
+        flex-direction: column;
+    }
+
+    .contactus article {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contactus article .content {
+        display: none;
+    }
+
+    .contactus form {
+        width: 95%;
+    }
+
+    .contactus .contentForMedia {
+        display: flex;
+    }
+}

@@ -1,0 +1,19 @@
+.footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 100px 5% 20px;
+}
+
+.footer header img {
+    width: 150px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+
+    .footer p {
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,134 @@
+.ourWay {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    align-items: center;
+    position: relative;
+}
+
+.ourWay::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: var(--primary-color);
+    background-image: url('images/background hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: .2;
+    animation-name: animationImg;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes animationImg {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.005);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.005);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.ourWay > header {
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: right;
+    z-index: 20;
+    font-weight: 700;
+    padding: 0 5%;
+}
+
+.ourWay .waysContainer {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4.75rem 1.25rem;
+    margin: 3rem 0 0;
+    z-index: 20;
+}
+
+.ourWay .waysContainer .way {
+    height: 7.8rem;
+    width: 100%;
+    background-image: linear-gradient(45deg, var(--primary-color), var(--secondry-color));
+    padding: 1.25rem;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.animationShow {
+    animation-name: show;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes show {
+    0% {
+        transform: scale(0, .025);
+    }
+
+    50% {
+        transform: scale(1, .025);
+    }
+}
+
+.ourWay .waysContainer .way p {
+    font-size: 15rem;
+    position: absolute;
+    bottom: -8.4rem;
+    right: -.3rem;
+    font-family: "Cairo-SemiBold";
+    opacity: .2;
+}
+
+
+
+@media (max-width: 1024px) {
+    .ourWay {
+        min-height: 100vh;
+        padding: 5rem 0;
+    }
+
+    .ourWay .waysContainer {
+        margin-top: 4rem;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4.75rem  1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .ourWay .waysContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ourWay .waysContainer .way {
+        width: 20rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .ourWay .waysContainer {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4.75rem 0;
+    }
+}

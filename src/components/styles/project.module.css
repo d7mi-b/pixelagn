@@ -1,0 +1,34 @@
+.projects {
+    align-items: center;
+    padding: 2.5%;
+    margin-bottom: 3rem;
+}
+
+.projects header {
+    font-size: 2.5rem;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.projects .projectsContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+@media (max-width: 1024px) {
+    .projects header {
+        text-align: center;
+    }
+
+    .projects .projectsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .projects .projectsContainer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

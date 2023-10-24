@@ -1,0 +1,108 @@
+.details {
+    background-color: var(--primary-color);
+    background-image: url('images/background hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5%;
+    color: var(--white-color);
+    align-items: center;
+    position: relative;
+    flex-direction: row !important;
+    overflow: hidden;
+}
+
+.details::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: .8;
+}
+
+.details > header {
+    font-size: 2.5rem;
+    z-index: 20;
+    width: 50%;
+    text-align: center;
+}
+
+.details .detailsContainer {
+    width: 50%;
+    margin: 4rem auto 2rem;
+    z-index: 20;
+    margin-right: 2rem;
+    position: relative;
+}
+
+.details .detailsContainer .detail {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 1rem 0;
+    padding: 1.5rem;
+}
+
+.animationToTop {
+    animation-name: moveToTop;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveToTop {
+    0% {
+        top: 1800px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+.details .detailsContainer .detail .icon {
+    font-size: 2.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0 1rem;
+    border-radius: .5rem 70% .5rem 40%;
+    background-image: linear-gradient(45deg, var(--primary-color), var(--secondry-color));
+}
+
+.details .detailsContainer .detail .icon svg {
+    position: relative;
+    top: -.6rem;
+}
+
+.details .detailsContainer header {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 1024px) {
+    .details {
+        flex-direction: column !important;
+        padding: 4rem;
+    }
+
+    .details > header {
+        width: 100%;
+    }
+
+    .details .detailsContainer {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .details .detailsContainer header {
+        font-size: 1.4rem;
+    }
+
+    .details .detailsContainer .detail {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

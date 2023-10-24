@@ -1,0 +1,133 @@
+
+:root {
+  --primary-color: #181818;
+  --secondry-color: #A020F0;
+  --white-color: #F6EFFB;
+}
+
+@font-face {
+  font-family: Cairo;
+  src: url('./fonts/Cairo/static/Cairo-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Cairo-SemiBold";
+  src: url('./fonts/Cairo/static/Cairo-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: "Cairo-Bold";
+  src: url('./fonts/Cairo/static/Cairo-Bold.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: Cairo;
+}
+
+html {
+  direction: rtl;
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+body {
+  background-color: var(--white-color);
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+header h1 {
+  font-family: "Cairo-SemiBold";
+}
+
+.page {
+  min-height: 120vh;
+}
+
+@media (max-width: 1024px) {
+  .page {
+    min-height: 60vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    min-height: 100vh;
+  }
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-container {
+  align-items: center;
+}
+
+.btn {
+  background-image: linear-gradient(45deg, var(--primary-color), var(--secondry-color));
+  padding: .5rem;
+  min-width: 10rem;
+  text-align: center;
+  font-family: "Cairo-SemiBold";
+}
+
+.btn:hover {
+  animation-name: btnHover;
+  animation-duration: .3s;
+  animation-fill-mode: both;
+}
+
+@keyframes btnHover {
+  0% {
+    background-image: linear-gradient(45deg, var(--primary-color), var(--secondry-color));
+  }
+
+  15% {
+    background-image: linear-gradient(30deg, var(--primary-color), var(--secondry-color));
+  }
+
+  30% {
+    background-image: linear-gradient(10deg, var(--primary-color), var(--secondry-color));
+  }
+
+  50% {
+    background-image: linear-gradient(0deg, var(--primary-color), var(--secondry-color));
+  }
+
+  70% {
+    background-image: linear-gradient(-10deg, var(--primary-color), var(--secondry-color));
+  }
+
+  85% {
+    background-image: linear-gradient(-30deg, var(--primary-color), var(--secondry-color));
+  }
+
+  100% {
+    background-image: linear-gradient(-45deg, var(--primary-color), var(--secondry-color));
+  }
+}
