@@ -7,6 +7,9 @@ import OurWay from '../components/OurWay';
 import ProjectsSection from '../components/ProjectsSection';
 import ContactusSection from '../components/ContactusSection';
 import { useEffect } from 'react';
+import Scroll, { Element } from 'react-scroll';
+
+const ScrollLink = Scroll.Link;
 
 function addAnimation() {
     var elements = document.querySelectorAll('#mockups');
@@ -28,11 +31,17 @@ const Home = () => {
 
     return (
         <main>
-            <Hero />
+            <Element id='/' name='pixel'>
+                <Hero />
+            </Element>
 
-            <AboutSection />
+            <Element id='about' name='about'>
+                <AboutSection />
+            </Element>
 
-            <Services />
+            <Element id='services' name='sevices'>
+                <Services />
+            </Element>
 
             <section className={`center ${style.partners}`}>
                 <header>
@@ -40,7 +49,9 @@ const Home = () => {
                 </header>
 
                 <section className={`btn-container`}>
-                    <a href="#" className={`btn ${style.btn}`}>أطلب موقعك</a>
+                    <ScrollLink className={`btn ${style.btn}`} to='contact-us' spy={true} smooth={true} duration={500}>
+                        أطلب موقعك
+                    </ScrollLink>
                 </section>
             </section>
 
@@ -55,9 +66,13 @@ const Home = () => {
 
             <OurWay />
 
-            <ProjectsSection />
+            <Element id='projects' name='projects'>
+                <ProjectsSection />
+            </Element>
 
-            <ContactusSection />
+            <Element id='contact-us' name='contact-us'>
+                <ContactusSection />
+            </Element>
 
         </main>
     );

@@ -1,6 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import style from './styles/navbar.module.css';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import scroll from 'react-scroll';
+
+const ScrollLink = scroll.Link;
 
 const Navbar = () => {
     return (
@@ -20,21 +23,35 @@ const Navbar = () => {
                         </li>
 
                         <li className={`${style.link}`}>
-                            <a href="#" className={`center`}>الرئيسية</a>
+                            <ScrollLink className='center' to='pixel' spy={true} smooth={true} duration={500}>
+                                الرئيسية
+                            </ScrollLink>
                         </li>
 
                         <li className={`${style.link}`}>
-                            <a href="#" className={`center`}>بكسل؟</a>
+                            <ScrollLink className='center' to='about' spy={true} smooth={true} duration={500}>
+                                بكسل؟
+                            </ScrollLink>
                         </li>
 
                         <li className={`${style.link}`}>
-                            <a href="#" className={`center`}>أعمالنا</a>
+                            <ScrollLink className='center' to='services' spy={true} smooth={true} duration={500}>
+                                خدماتنا
+                            </ScrollLink>
+                        </li>
+
+                        <li className={`${style.link}`}>
+                            <ScrollLink className='center' to='projects' spy={true} smooth={true} duration={500}>
+                                أعمالنا
+                            </ScrollLink>
                         </li>
                     </section>
                 </ul>
 
                 <section className={`center btn-container ${style.btnContainer}`}>
-                    <a href='#' className={`btn`}>تواصل معنا</a>
+                    <ScrollLink className='btn' to='contact-us' spy={true} smooth={true} duration={500}>
+                        تواصل معنا
+                    </ScrollLink>
                 </section>
             </nav>
         </header>
