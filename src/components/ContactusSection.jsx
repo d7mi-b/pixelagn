@@ -7,7 +7,7 @@ const ContactusSection = () => {
     return (
         <section className={`page ${style.contactus}`}>
             <section className={style.logoBackground}>
-                <img src="images/Pixel in purple.svg" alt="pixel" />
+                <img src="images/Pixel in purple.png" alt="pixel" />
             </section>
             <article>
                 <header>
@@ -71,16 +71,16 @@ const ContactusSection = () => {
                 </div>
 
                 <div>
-                    <a href="#"><FontAwesomeIcon icon={faWhatsapp} /></a>
+                    <a href="https://wa.me/+96730626247" target='_blank'><FontAwesomeIcon icon={faWhatsapp} /></a>
                 </div>
 
                 <div>
                     
-                    <a href="#"><FontAwesomeIcon icon={faXTwitter} /></a>
+                    <a href="https://twitter.com/pixelagn" target='_blank'><FontAwesomeIcon icon={faXTwitter} /></a>
                 </div>
 
                 <div>
-                    <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+                    <a href="https://www.instagram.com/pixelagn/" target='_blank'><FontAwesomeIcon icon={faInstagram} /></a>
                 </div>
             </section>
         </section>

@@ -10,7 +10,7 @@
 }
 
 .partners::after {
-    content: url('/images/Pixel in purple.svg');
+    content: url('/images/Pixel in purple.png');
     width: 100%;
     height: 100%;
     display: block;

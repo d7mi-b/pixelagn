@@ -11,7 +11,7 @@
     height: 100%;
     display: block;
     background-color: var(--primary-color);
-    background-image: url('images/background hero.png');
+    background-image: url('/images/background hero.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@
     z-index: 1;
     opacity: .2;
     animation-name: animationImg;
-    animation-duration: 1s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-fill-mode: both;
 }

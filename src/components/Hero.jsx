@@ -14,7 +14,7 @@ const Hero = () => {
             </header>
 
             <section className={`center ${style.btnContainer}`}>
-                <a href='#' className={`btn ${style.btn}`}>اطلب موقعك</a>
+                <a href='https://wa.me/+96730626247' target='_blank' className={`btn ${style.btn}`}>اطلب موقعك</a>
             </section>
         </section>
     );

@@ -1,6 +1,6 @@
 .details {
     background-color: var(--primary-color);
-    background-image: url('images/background hero.png');
+    background-image: url('/images/background hero.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

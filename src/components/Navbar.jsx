@@ -10,7 +10,7 @@ const Navbar = () => {
         <header className={style.copmonent}>
             <nav className={style.navbar}>
                 <section className={`center ${style.logo}`}>
-                    <img src="/images/pixel.svg" alt="pixel" />
+                    <img src="/images/Pixel in white.png" alt="pixel" />
                 </section>
                 <ul className={style.list}>
                     <li className={style.bar}>
@@ -49,9 +49,10 @@ const Navbar = () => {
                 </ul>
 
                 <section className={`center btn-container ${style.btnContainer}`}>
-                    <ScrollLink className='btn' to='contact-us' spy={true} smooth={true} duration={500}>
+                    {/* <ScrollLink className='btn' to='contact-us' spy={true} smooth={true} duration={500}>
                         تواصل معنا
-                    </ScrollLink>
+                    </ScrollLink> */}
+                    <a href="https://wa.me/+96730626247" target='_blank' className='btn'>تواصل معنا</a>
                 </section>
             </nav>
         </header>

@@ -49,9 +49,10 @@ const Home = () => {
                 </header>
 
                 <section className={`btn-container`}>
-                    <ScrollLink className={`btn ${style.btn}`} to='contact-us' spy={true} smooth={true} duration={500}>
+                    {/* <ScrollLink className={`btn ${style.btn}`} to='contact-us' spy={true} smooth={true} duration={500}>
                         أطلب موقعك
-                    </ScrollLink>
+                    </ScrollLink> */}
+                    <a href="https://wa.me/+96730626247" target='_blank' className={`btn ${style.btn}`}>أطلب موقعك</a>
                 </section>
             </section>
 
@@ -70,9 +71,9 @@ const Home = () => {
                 <ProjectsSection />
             </Element>
 
-            <Element id='contact-us' name='contact-us'>
+            {/* <Element id='contact-us' name='contact-us'>
                 <ContactusSection />
-            </Element>
+            </Element> */}
 
         </main>
     );

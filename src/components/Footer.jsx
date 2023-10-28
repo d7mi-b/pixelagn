@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className={`center ${style.footer}`}>
             <header>
-                <img src="images/pixel.svg" alt="pixel" />
+                <img src="images/Pixel in white.png" alt="pixel" />
                 <h3>وكالة إبداعية مهتمة بتصميم وتطوير المواقع الإلكترونية </h3>
             </header>
 
