@@ -13,7 +13,7 @@ const ContactusSection = () => {
                 <header>
                     <h1>نسعد بتواصلك معنا</h1>
                 </header>
-                <section className={style.content}>
+                {/* <section className={style.content}>
                     <div>
                         <FontAwesomeIcon icon={faEnvelope} />
                         <span>البريد الالكتروني</span>
@@ -34,10 +34,10 @@ const ContactusSection = () => {
                         <FontAwesomeIcon icon={faInstagram} />
                         <a href="https://www.instagram.com/pixelagn/">@pixelagn</a>
                     </div>
-                </section>
+                </section> */}
             </article>
 
-            <form className='center'>
+            {/* <form className='center'>
                 <div>
                     <label htmlFor="name">الاسم</label>
                     <input type="text" name="name" required placeholder='أحمد'/>
@@ -61,7 +61,7 @@ const ContactusSection = () => {
                 <div className={`btn-container`}>
                     <input className={`btn ${style.btn}`} type="submit" name="submit" value="ارسال" />
                 </div>
-            </form>
+            </form> */}
 
             <section className={style.contentForMedia}>
                 <div>
@@ -75,7 +75,6 @@ const ContactusSection = () => {
                 </div>
 
                 <div>
-                    
                     <a href="https://twitter.com/pixelagn" target='_blank'><FontAwesomeIcon icon={faXTwitter} /></a>
                 </div>
 

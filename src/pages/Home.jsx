@@ -71,9 +71,9 @@ const Home = () => {
                 <ProjectsSection />
             </Element>
 
-            {/* <Element id='contact-us' name='contact-us'>
+            <Element id='contact-us' name='contact-us'>
                 <ContactusSection />
-            </Element> */}
+            </Element>
 
         </main>
     );

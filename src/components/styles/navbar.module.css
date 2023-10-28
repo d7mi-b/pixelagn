@@ -71,7 +71,7 @@
         padding: 5%;
     }
 
-    .navbar .list section li {
+    .navbar .list section li:not(.navbar .list li:first-child) {
         margin: 2rem 0;
     }
 

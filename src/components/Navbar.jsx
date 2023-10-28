@@ -19,7 +19,7 @@ const Navbar = () => {
 
                     <section>
                         <li className={`center ${style.logo}`}>
-                            <img src="/images/pixel.svg" alt="pixel" />
+                            <img src="/images/Pixel in white.png" alt="pixel" />
                         </li>
 
                         <li className={`${style.link}`}>
