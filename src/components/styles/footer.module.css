@@ -4,8 +4,13 @@
     padding: 100px 5% 20px;
 }
 
-.footer header img {
+.footer section img {
     width: 150px;
+}
+
+.footer > p {
+    font-size: .8rem;
+    margin-top: .5rem;
 }
 
 @media (max-width: 768px) {
@@ -13,7 +18,7 @@
         text-align: center;
     }
 
-    .footer p {
+    .footer > p {
         margin-top: 2rem;
     }
 }

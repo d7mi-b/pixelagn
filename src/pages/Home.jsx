@@ -52,7 +52,7 @@ const Home = () => {
                     {/* <ScrollLink className={`btn ${style.btn}`} to='contact-us' spy={true} smooth={true} duration={500}>
                         أطلب موقعك
                     </ScrollLink> */}
-                    <a href="https://wa.me/+96730626247" target='_blank' className={`btn ${style.btn}`}>أطلب موقعك</a>
+                    <a href="https://wa.me/966538763545" target='_blank' className={`btn ${style.btn}`}>أطلب موقعك</a>
                 </section>
             </section>
 

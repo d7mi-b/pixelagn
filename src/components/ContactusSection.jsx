@@ -22,17 +22,17 @@ const ContactusSection = () => {
 
                     <div>
                         <FontAwesomeIcon icon={faWhatsapp} />
-                        <a href="https://wa.me/+96730626247">+96730626247</a>
+                        <a href="https://wa.me/966538763545" target="_blank">+966538763545</a>
                     </div>
 
                     <div>
                         <FontAwesomeIcon icon={faXTwitter} />
-                        <a href="https://twitter.com/pixelagn">@pixelagn</a>
+                        <a href="https://twitter.com/pixelagn">pixelagn</a>
                     </div>
 
                     <div>
                         <FontAwesomeIcon icon={faInstagram} />
-                        <a href="https://www.instagram.com/pixelagn/">@pixelagn</a>
+                        <a href="https://www.instagram.com/pixelagn/">pixelagn</a>
                     </div>
                 </section>
             </article>
@@ -71,7 +71,7 @@ const ContactusSection = () => {
                 </div>
 
                 <div>
-                    <a href="https://wa.me/+96730626247" target='_blank'><FontAwesomeIcon icon={faWhatsapp} /></a>
+                    <a href="https://wa.me/966538763545" target='_blank'><FontAwesomeIcon icon={faWhatsapp} /></a>
                 </div>
 
                 <div>

@@ -52,7 +52,7 @@ const Navbar = () => {
                     {/* <ScrollLink className='btn' to='contact-us' spy={true} smooth={true} duration={500}>
                         تواصل معنا
                     </ScrollLink> */}
-                    <a href="https://wa.me/+96730626247" target='_blank' className='btn'>تواصل معنا</a>
+                    <a href="https://wa.me/966538763545" target='_blank' className='btn'>تواصل معنا</a>
                 </section>
             </nav>
         </header>

@@ -11,6 +11,11 @@
 }
 
 @font-face {
+  font-family: "Cairo-medium";
+  src: url('./fonts/Cairo/static/Cairo-Medium.ttf');
+}
+
+@font-face {
   font-family: "Cairo-SemiBold";
   src: url('./fonts/Cairo/static/Cairo-SemiBold.ttf');
 }
@@ -94,7 +99,11 @@ header h1 {
   padding: .5rem;
   min-width: 10rem;
   text-align: center;
-  font-family: "Cairo-SemiBold";
+  font-family: "Cairo-medium";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .btn:hover {
